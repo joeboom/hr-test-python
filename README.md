@@ -22,20 +22,25 @@ This is the interview questions for python dev skills.
 - Free to choose any python web component
 - All outputs in JSON
 
-API definition:
+API definition: /timestamp
+> return current UNIX timestamp
 ```
-# return current UNIX timestamp
-/timestamp
-```
-Test command:
-```
+# Test command:
 curl 127.0.0.1/timestamp
-```
-Expected outcome:
-```
+
+# Expected outcome:
 {"timestamp":1624900201}
 ```
+bad input
+```
+# Test command:
+curl 127.0.0.1/noexist
 
+# Expected outcome:  (standard nginx 404 output)
+... 
+404 Not Found 
+...
+```
 
 
 What to submit:

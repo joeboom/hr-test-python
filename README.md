@@ -18,7 +18,7 @@ This is the interview questions for python dev skills.
 ---
 ### 3. Setup a RESTful API with python & nginx.
 - Using localhost
-- Using Nginx as the front (reverse proxy)
+- Using Nginx as the front web server (reverse proxy)
 - Free to choose any python web component
 - All outputs in JSON
 
@@ -31,6 +31,20 @@ curl 127.0.0.1/timestamp
 # Expected outcome:
 {"timestamp":1624900201}
 ```
+
+API definition: /readdata
+> read POST JSON input and send it back
+```
+# Test command:
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"username":"abc","password":"xyz"}' \
+  http://127.0.0.1/readdata
+
+# Expected outcome:
+{"username":"abc","password":"xyz"}
+```
+
 bad input
 ```
 # Test command:
@@ -43,6 +57,6 @@ curl 127.0.0.1/noexist
 ```
 
 
-What to submit:
+#### What to submit:
 - Nginx server config
 - Python cod

@@ -59,4 +59,4 @@ curl 127.0.0.1/noexist
 
 #### What to submit:
 - Nginx server config
-- Python cod
+- Python code

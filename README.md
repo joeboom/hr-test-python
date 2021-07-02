@@ -60,7 +60,7 @@ curl 127.0.0.1/noexist
 
 ---
 ### 3.1 Nginx (Optional)
-- Using Nginx as the front web server (reverse proxy)
+- Use Nginx as the front web server (reverse proxy)
 - deploy python program on port 8000
 
 #### What to submit:

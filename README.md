@@ -18,7 +18,6 @@ This is the interview questions for python dev skills.
 ---
 ### 3. Setup a RESTful API with python & nginx.
 - Using localhost
-- Using Nginx as the front web server (reverse proxy)
 - Free to choose any python web component
 - All outputs in JSON
 
@@ -50,13 +49,18 @@ bad input
 # Test command:
 curl 127.0.0.1/noexist
 
-# Expected outcome:  (standard nginx 404 output)
+# Expected outcome:  (404)
 ... 
 404 Not Found 
 ...
 ```
 
+#### What to submit:
+- Python code
+
+---
+### 3.1 Nginx (Optional)
+- Using Nginx as the front web server (reverse proxy)
 
 #### What to submit:
 - Nginx server config
-- Python code
